@@ -1,0 +1,42 @@
+- module: apt
+  params:
+    name: nginx
+    state: present
+
+- module: copy
+  params:
+    src: ./public
+    dest: /var/www/
+    backup: true
+
+- module: template
+  params:
+    src: /Users/joseph_d/MyLittleAnsible/group-1015896/default.conf.j2
+    dest: /usr/local/etc/nginx/sites-enabled/default.conf.j2
+    vars:
+      listen_port: 8000
+      server_name: "MyLittleAnsible"
+      document_root': /var/www/html/
+
+- module: service
+  params:
+    name: nginx.service
+    state: started
+
+- module: service
+  params:
+    name: nginx.service
+    state: enabled
+
+- module: command
+  params:
+    command: |
+      echo "On y est arrivé!" > ./echo.txt
+      cat ./echo.txt
+
+- module: sysctl
+  params:
+    attribute: "net.core.somaxconn"
+    value: 8192
+    permanent: true
+

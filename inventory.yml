@@ -1,0 +1,6 @@
+hosts:
+    webserver:
+        ssh_address: 13.39.87.113
+        ssh_port: 2222
+        ssh_username: joseph_d
+        ssh_key_file: /Users/joseph_d/.ssh/joseph_d_rsa

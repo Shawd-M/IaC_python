@@ -1,0 +1,7 @@
+apt_nginx_present: ok
+command: ok
+copy: ok
+service_nginx.service_enabled: ok
+service_nginx.service_started: ok
+sysctl: ok
+template: ok

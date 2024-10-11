@@ -1,0 +1,26 @@
+2023-11-09 01:46:38,485 - INFO - Nombre de tâches à exécuter : 7
+2023-11-09 01:46:38,487 - INFO - Exécution des tâches sur l'hôte webserver (IP: 13.39.87.113):
+2023-11-09 01:46:38,487 - INFO - Exécution des tâches sur l'utilisateur joseph_d (IP: joseph_d):
+2023-11-09 01:46:38,559 - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2023-11-09 01:46:38,753 - INFO - Authentication (publickey) successful!
+2023-11-09 01:46:38,753 - INFO - Connected to 13.39.87.113 as joseph_d
+2023-11-09 01:46:38,754 - INFO - Commande à exécuter : sudo yum install -y nginx
+2023-11-09 01:46:39,303 - INFO - Commande éxécutée avec succès : sudo yum install -y nginx
+2023-11-09 01:46:39,305 - INFO - Commande à éxécuter : sudo cp -r ./public /var/www/
+2023-11-09 01:46:39,443 - INFO - Commande éxécutée avec succès : sudo cp -r ./public /var/www/
+2023-11-09 01:46:39,486 - INFO - Commande à éxécuter : sudo cp /usr/local/etc/nginx/sites-enabled/default.conf.j2 /usr/local/etc/nginx/sites-enabled/default.conf.j2
+2023-11-09 01:46:39,580 - INFO - Commande éxécutée avec succès : sudo cp -r ./public /var/www/
+2023-11-09 01:46:39,583 - INFO - Commande à éxécuter : sudo service nginx.service start
+2023-11-09 01:46:39,747 - INFO - Commande éxécutée avec succès : sudo service nginx.service start
+2023-11-09 01:46:39,749 - INFO - Commande à éxécuter : sudo systemctl enable nginx.service
+2023-11-09 01:46:40,291 - INFO - Commande éxécutée avec succès : sudo systemctl enable nginx.service
+2023-11-09 01:46:40,388 - INFO - Commande éxécutée avec succès : echo "On y est arrivé!" > ./echo.txt
+cat ./echo.txt
+
+2023-11-09 01:46:40,481 - INFO - Commande éxécutée avec succès : echo "On y est arrivé!" > ./echo.txt
+cat ./echo.txt
+
+2023-11-09 01:46:40,621 - INFO - Commande sysctl éxécutée avec succès : sudo sysctl -w net.core.somaxconn=8192 -p
+2023-11-09 01:46:40,716 - INFO - Commande éxécutée avec succès : echo "On y est arrivé!" > ./echo.txt
+cat ./echo.txt
+
